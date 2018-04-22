@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Exo-2";
+    src: url(https://fonts.gstatic.com/s/cabin/v12/u-4x0qWljRw-Pd8w__0.woff2);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(158, 58, 183);
+    background-image: url(https://i.pinimg.com/736x/33/72/ff/3372ffb9b0d68388207128ffd3670882--purple-ombre-wallpaper-ombre-iphone-wallpaper.jpg);
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: beige;
+    font-size: 2.2rem;
+    font-family: "Lato";
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+p {
+    padding-left: 10px;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    font-family: "Lato";
+}
+
+form {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Exo-2";
+    background-color: rgba(232, 223, 248, 0.8);
+    overflow: auto;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+label {
+    padding: 7px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input,
+select {
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: "Lato";
+}
+
+input[type="button"] {
+    padding: 10px;
+    background-color: rgba(133, 13, 180, 0.8);
+    border-radius: 20px;
+    color: rgb(238, 238, 238);
+    font-size: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    padding-left: 15px;
+    margin: 0;
+    padding-top: 0;
+}

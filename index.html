@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creat Your Own Movie Festival</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>MOVIE FESTIVAL</h1>
+        <p class="TitleOfDocument">Please Fill In The Form : </p>
+        <form action="#">
+            <fieldset>
+                <legend>Movie</legend>
+                <label>
+                    Title
+                    <input type="text" name="title" id="movie-title" placeholder="Title">
+                </label>
+                <div id="title-error" style="display: none" class="error-message">Required*</div>
+                <br>
+                <label>
+                    Length (min)
+                    <input type="text" name="length" id="movie-length" placeholder="Length in min">
+                </label>
+                <br>
+                <label>
+                    Genre
+                    <select id="movie-genre">
+
+                    </select>
+                </label>
+                <br>
+                <input type="button" value="Create Your Movie" id="create-movie">
+            </fieldset>
+            <div class="message">
+                <p id="calculate-movies-lenght"></p>
+            </div>
+            <ul id="list-created-movies"></ul>
+            <fieldset>
+                <legend>Program</legend>
+                <label>
+                    Date
+                    <input type="date" name="date" id="program-date">
+                </label>
+                <br>
+                <input type="button" value="Create Program" id="createProgram">
+                <br>
+                <ul id="list-created-programs">
+                </ul>
+                <br>
+                <label>
+                    Movie
+                    <select name="movies" id="dropdown-movies">
+
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Program
+                    <select name="genres" id="dropdown-programs">
+                    </select>
+                </label>
+                <br>
+                <input type="button" value="Add Selected Movie To Selected Program" id="addMovie">
+            </fieldset>
+        </form>
+    </div>
+    <script src="movies.js"></script>
+    <script src="programs.js"></script>
+</body>
+
+</html>
